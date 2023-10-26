@@ -8,8 +8,8 @@ GROUP BY product_id, new_price
 UNION
 SELECT DISTINCT product_id, 10 price, '1970-01-01' change_date
 FROM Products
-),
-
+)
+,
 CTE2 AS(
 SELECT product_id, MAX(change_date) change_date
 FROM CTE1
