@@ -1,4 +1,5 @@
 /* Write your T-SQL query statement below */
+
 WITH CTE1 AS(
 SELECT TOP 1 U.name results
 FROM Users U
