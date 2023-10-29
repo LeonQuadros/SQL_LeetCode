@@ -1,5 +1,4 @@
 /* Write your T-SQL query statement below */
-
 WITH CTE1 AS(
 SELECT visited_on, CAST(SUM(amount) AS FLOAT) amount, ROW_NUMBER() OVER(ORDER BY visited_on) rn
 FROM Customer
